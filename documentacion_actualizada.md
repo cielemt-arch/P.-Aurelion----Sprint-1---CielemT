@@ -44,6 +44,26 @@ Este resumen consolida las métricas clave y las conclusiones de los análisis r
 * **Categoría Dominante:** **Alimentos** (83.5% del ingreso total).
 * **Medio de Pago Principal:** El **Efectivo** es el medio que genera el mayor ingreso ($934,819).
 * **Distribución Geográfica:** Río Cuarto, Alta Gracia y Córdoba son las ciudades con mayor volumen de transacciones.
+  
+### 3.1.1. ⚠️ Clientes Inactivos (Hallazgo Crítico)
+
+El conteo de clientes activos (Clases A, B, y C) sumó **67 clientes**, lo que representa una base activa del 67% del total. La diferencia de **33 clientes** con respecto a la base de datos total de 100 IDs indica un riesgo significativo de inactividad de clientes.
+
+#### Razón de la Discrepancia
+
+| Segmento            | Conteo           | Significado                                                                                                                                                |
+| :------------------ | :--------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Clientes A + B + C  | **67 Clientes**  | Son los **clientes transaccionales (activos)** que realizaron al menos una compra en el periodo analizado (Enero-Junio 2024).                              |
+| Base de Datos Total | **100 Clientes** | Es la cantidad total de IDs de clientes registrados en su base de datos maestra.                                                                           |
+| **Diferencia**      | **33 Clientes**  | Son los **clientes inactivos (dormant)** que existen en el sistema pero no realizaron ninguna compra durante los seis meses analizados (Enero-Junio 2024). |
+
+#### Conclusión y Vínculo con la Estrategia
+
+El hecho de que **33 clientes** registrados no hayan generado ingresos en este periodo (Enero-Junio) confirma y dimensiona el riesgo que se identificó en el resumen (**ALERTA ROJA**).
+
+El problema es doble: la empresa enfrenta una **Fuga de Clientes** (pérdida de actividad de clientes existentes) y una **Falta de Captación** (no reemplaza ni hace crecer el volumen total). La prioridad inmediata debe ser la **Estrategia de Reactivación** de estos 33 clientes inactivos.
+
+---
 
 ### 3.2. Tendencia Temporal (Punto 3)
 

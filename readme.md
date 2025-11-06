@@ -36,6 +36,10 @@ El gasto promedio de la Clase A es el motor financiero de la empresa. La estrate
 | #2     | Alta Gracia    | $481,504          |
 | #3     | Cordoba        | $481,482          |
 
+| Acción                       | Prioridad | Métrica Clave                                    | Descripción                                                                                                                                                                                                                                                                                                                                                                |
+| :--------------------------- | :-------- | :----------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Foco en Ciudades Gemelas** | **Alta**  | Ingreso por Transacción en Alta Gracia y Córdoba | Implementar una campaña promocional enfocada en **Alta Gracia y Córdoba**. Utilizar el medio de pago más popular en la región (revisar el análisis de medios de pago) y ofrecer beneficios geolocalizados (ej. "Envío gratis en tu ciudad" o "Evento de degustación exclusivo"). El objetivo es que una de las dos ciudades supere a la otra, garantizando el crecimiento. |
+
 ### 3. Estrategia de Productos (Clase B y C)
 
 El análisis identifica oportunidades para aumentar el valor de los productos de Clase B y candidatos para descontinuación en la Clase C.
@@ -50,17 +54,21 @@ El análisis identifica oportunidades para aumentar el valor de los productos de
 
 ## III. Plan de Acción Recomendado (Sprint 3)
 
-Basado en los hallazgos críticos de este análisis, se proponen tres líneas de acción urgentes:
+Las siguientes acciones deben priorizarse en el próximo sprint para abordar los riesgos identificados (Clientes Inactivos, Concentración de Ingresos y Cero Captación).
 
-1.  **Fidelización y Retención del Segmento A:**
-    * Crear un programa de lealtad exclusivo (descuentos o acceso anticipado) dirigido a los **39 Clientes A** para asegurar que su valor no se pierda.
+### 1. Foco en la Retención y Reactivación (Objetivo: Estabilizar la Base)
 
-2.  **Estrategia de Captación Inmediata (ALERTA ROJA):**
-    * Iniciar campañas de *marketing* digital o *referidos* con el objetivo explícito de registrar y activar clientes con **menos de 3 meses de antigüedad**.
+| Acción                           | Prioridad   | Métrica Clave                     | Descripción                                                                                                                                                                            |
+| :------------------------------- | :---------- | :-------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **A. Reactivación de Inactivos** | **Alta**    | Tasa de Reactivación (Target 15%) | Implementar una campaña de email/SMS segmentada para los **33 Clientes Inactivos**. Ofrecer un incentivo (descuento del 15% en su próxima compra) para moverlos al estatus de Clase C. |
+| **B. Retención de Clase A**      | **Crítica** | Churn Rate de Clientes A          | Desarrollar un programa de fidelidad VIP para los 39 Clientes Clase A, que generan el 80% de los ingresos. Esto reduce el riesgo de concentración.                                     |
 
-3.  **Optimización del Catálogo y Geografía:**
-    * **Inventario:** Descontinuar los productos de menor rendimiento de la **Clase C** (ej. Hilo Dental y Jugo en Polvo Naranja) y redirigir el capital a productos de Clase A.
-    * **Geografía:** Priorizar las inversiones en publicidad y distribución en **Río Cuarto**, que es el mercado más rentable.
+### 2. Diversificación de Ingresos y Crecimiento (Objetivo: Reducir la Dependencia)
+
+| Acción                           | Prioridad   | Métrica Clave              | Descripción                                                                                                                                                                 |
+| :------------------------------- | :---------- | :------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **C. Segmentación de Productos** | **Media**   | Ingreso de Productos B y C | Crear paquetes promocionales con productos de Clase B y C para impulsar su venta y diversificar las fuentes de ingreso (ej. "Pack de Picnic" con Vino, Empanadas y Snacks). |
+| **D. Estrategia de Captación**   | **Crítica** | Clientes Nuevos / Mes      | Iniciar una campaña de marketing digital orientada a la adquisición de nuevos clientes para reemplazar la falta de crecimiento reportada.                                   |
 
 ---
 

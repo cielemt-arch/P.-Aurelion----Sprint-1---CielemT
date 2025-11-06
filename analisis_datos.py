@@ -332,3 +332,60 @@ print("\n3b. Top 5 Productos Clase C (Bajo Valor - Candidatos a Descontinuación
 print(df_productos_c[['nombre_producto', 'ingreso_total']])
 
 print("\n--- Fin del Análisis Avanzado SPRINT 2 ---")
+
+# --- GRÁFICO 8: DISTRIBUCIÓN DE CLIENTES ACTIVOS VS. INACTIVOS ---
+
+# Reconfirmamos la carga del DataFrame final para evitar el error 'NameError'.
+# ASUME que el archivo 'ventas_unificado.csv' existe y es la fuente de datos.
+try:
+    df_ventas_final = pd.read_csv('ventas_unificado.csv')
+except FileNotFoundError:
+    print("Error: Asegúrate de que 'ventas_unificado.csv' existe en la carpeta y la ruta es correcta.")
+    # Si la carga falla, no se puede continuar. Puedes salir o usar un DataFrame dummy.
+    # Por ahora, solo saldremos:
+    raise # Esto detendrá la ejecución si el archivo no se encuentra
+
+# Base total de clientes registrada.
+CLIENTES_TOTAL_BASE = 100 
+
+# Calcular Clientes Activos (usando el DataFrame recién cargado)
+# Usamos 'df_ventas_final' para evitar conflictos de variables.
+clientes_activos = df_ventas_final['id_cliente'].nunique()
+
+# Calcular Clientes Inactivos
+clientes_inactivos = CLIENTES_TOTAL_BASE - clientes_activos
+
+# Preparar datos para el gráfico de pastel
+data_clientes = pd.Series({
+    'Clientes Activos (67)': clientes_activos, 
+    'Clientes Inactivos (33)': clientes_inactivos
+})
+etiquetas = data_clientes.index
+tamaños = data_clientes.values
+
+# Definir la paleta de colores: Azul para Activos, Rojo/Naranja para Inactivos (Riesgo)
+colores = ['#4c72b0', '#ff9896'] 
+
+# Generar el gráfico de pastel (Pie Chart)
+plt.figure(figsize=(8, 8))
+plt.pie(
+    tamaños, 
+    labels=etiquetas, 
+    colors=colores, 
+    autopct='%1.1f%%', 
+    startangle=90,
+    wedgeprops={'edgecolor': 'black'}
+)
+
+plt.title('Distribución de Clientes: Activos vs. Inactivos (Base Total: 100)', fontsize=14)
+plt.legend(loc="upper right")
+plt.axis('equal') # Asegura que el gráfico sea un círculo
+
+# Guardar el gráfico
+nombre_archivo_grafico = '08_Clientes_Activos_Inactivos.png'
+plt.savefig(nombre_archivo_grafico, bbox_inches='tight')
+plt.close()
+
+print(f"\n✅ Gráfico generado: {nombre_archivo_grafico}")
+
+# --- FIN DEL GRÁFICO 8 ---
